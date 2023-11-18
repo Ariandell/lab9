@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра "21"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="maint" src="./sound/maintheme.mp3" autoplay loop></audio>
+    <div id="game">
+        <h2>Раунд: <span id="round"></span></h2>
+        <button id="draw">Взяти карту</button>
+        <h2>Ваші очки: <span id="userScore"></span></h2>
+        <h2>Світла сторона: <span id="computerScore"></span></h2>
+        <div class="card-container">
+            <div id="userCard" class="card user-card" data-player="user"></div>
+            <div id="computerCard" class="card computer-card" data-player="computer"></div>
+        </div>
+    </div>
+    <div id="start-container">
+        <p id="start-text">The dark side of the Force is the path to many abilities that some consider... unnatural.</p>
+        <button id="start">Почати гру</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
