@@ -18,9 +18,12 @@ let cards = {
     'Корольr': { value: 4, image: './cards/Kr.png' },
     'Тузr': { value: 11, image: './cards/Ar.png' }
 };
-var audio1 =  new Audio(document.getElementById("maint"));
+let maintAudioElement = document.getElementById("maint");
+let maintAudioPath = maintAudioElement ? maintAudioElement.value : '';
+var audio1 = new Audio(maintAudioPath);
 audio1.volume = 0.15;
 audio1.play();
+
 let userScore = 0;
 let computerScore = 0;
 let round = 0;
