@@ -20,6 +20,7 @@ let cards = {
 };
 var audio1 =  new Audio(document.getElementById("maint"));
 audio1.volume = 0.15;
+audio1.play();
 let userScore = 0;
 let computerScore = 0;
 let round = 0;
